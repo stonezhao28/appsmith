@@ -43,7 +43,7 @@ function AddNewRowBannerComponent(props: AddNewRowBannerType) {
 
   return (
     <Container>
-      <Title>Add New Row</Title>
+      <Title>新增一行</Title>
       <ActionContainer>
         <BaseButton
           borderRadius={props.borderRadius}
@@ -59,7 +59,7 @@ function AddNewRowBannerComponent(props: AddNewRowBannerType) {
               setIsDiscardLoading(false),
             );
           }}
-          text="Discard"
+          text="放弃"
         />
         <BaseButton
           borderRadius={props.borderRadius}
@@ -75,7 +75,7 @@ function AddNewRowBannerComponent(props: AddNewRowBannerType) {
               setIsSaveLoading(false),
             );
           }}
-          text="Save row"
+          text="保存"
         />
       </ActionContainer>
     </Container>

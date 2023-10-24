@@ -87,11 +87,11 @@ interface DownloadOptionProps {
 
 const dowloadOptions: DownloadOptionProps[] = [
   {
-    label: "Download as CSV",
+    label: "下载为CSV格式",
     value: "CSV",
   },
   {
-    label: "Download as Excel",
+    label: "下载为Excel格式",
     value: "EXCEL",
   },
 ];
@@ -225,7 +225,7 @@ function TableDataDownload(props: TableDataDownloadProps) {
           icon="download"
           selectMenu={selectMenu}
           selected={selected}
-          title="Download"
+          title="下载"
           width={16}
         />
         <DropDownWrapper>

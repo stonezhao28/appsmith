@@ -177,7 +177,7 @@ function Actions(props: ActionsPropsType) {
                 icon="add"
                 selectMenu={props.onAddNewRow}
                 selected={false}
-                title="Add new row"
+                title="新增一行"
                 width={12}
               />
             )}
