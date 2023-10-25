@@ -159,7 +159,7 @@ function TableHeader(props: TableHeaderProps) {
         >
           <SearchComponent
             onSearch={props.searchTableData}
-            placeholder="Search..."
+            placeholder="查询中"
             value={props.searchKey}
           />
         </SearchComponentWrapper>

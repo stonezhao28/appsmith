@@ -14,8 +14,8 @@ export const APPSMITH_DISPLAY_VERSION = (edition: string, version: string) =>
   `Appsmith ${edition} ${version}`;
 export const INTERCOM_CONSENT_MESSAGE = () =>
   `Can we have your email for better support?`;
-export const YES = () => `Yes`;
-export const ARE_YOU_SURE = () => `Are you sure?`;
+export const YES = () => `是的`;
+export const ARE_YOU_SURE = () => `是否确定?`;
 export const ERROR_ADD_API_INVALID_URL = () =>
   `Unable to create API. Try adding a URL to the datasource`;
 export const ERROR_MESSAGE_NAME_EMPTY = () => `Please select a name`;
@@ -25,7 +25,7 @@ export const APPLICATION_NAME_UPDATE = () => `Application name updated`;
 export const ERROR_EMPTY_APPLICATION_NAME = () =>
   `Application name can't be empty`;
 export const API_PATH_START_WITH_SLASH_ERROR = () => `Path cannot start with /`;
-export const FIELD_REQUIRED_ERROR = () => `This field is required`;
+export const FIELD_REQUIRED_ERROR = () => `此字段必填`;
 export const INPUT_DEFAULT_TEXT_MAX_CHAR_ERROR = (max: number) =>
   `Default text length must be less than or equal to ${max} characters`;
 export const INPUT_TEXT_MAX_CHAR_ERROR = (max: number) =>
@@ -38,32 +38,28 @@ export const INPUT_INVALID_TYPE_ERROR = () =>
   `Type Mismatch. Please enter a valid value`;
 export const VALID_FUNCTION_NAME_ERROR = () =>
   `Must be a valid variable name (camelCase)`;
-export const UNIQUE_NAME_ERROR = () => `Name must be unique`;
-export const NAME_SPACE_ERROR = () => `Name must not have spaces`;
+export const UNIQUE_NAME_ERROR = () => `名字必须唯一`;
+export const NAME_SPACE_ERROR = () => `名字不可以有空格`;
 export const APLHANUMERIC_HYPHEN_SLASH_SPACE_ERROR = () =>
   `Name must only contain alphanumeric characters, hyphen, slash, and space`;
 
-export const FORM_VALIDATION_EMPTY_EMAIL = () => `Please enter an email`;
+export const FORM_VALIDATION_EMPTY_EMAIL = () => `请输入email`;
 export const FORM_VALIDATION_INVALID_EMAIL = () =>
   `Please provide a valid email address`;
-export const ENTER_VIDEO_URL = () => `Please provide a valid url`;
-export const ENTER_AUDIO_URL = () => `Please provide a valid url`;
+export const ENTER_VIDEO_URL = () => `请提供有效的url地址`;
+export const ENTER_AUDIO_URL = () => `请提供有效的url地址`;
 
-export const FORM_VALIDATION_EMPTY_PASSWORD = () => `Please enter the password`;
-export const FORM_VALIDATION_PASSWORD_RULE = () =>
-  `Please provide a password between 6 and 256 characters`;
+export const FORM_VALIDATION_EMPTY_PASSWORD = () => `请输入密码`;
+export const FORM_VALIDATION_PASSWORD_RULE = () => `密码长度6到256位`;
 export const FORM_VALIDATION_INVALID_PASSWORD = FORM_VALIDATION_PASSWORD_RULE;
 
 export const LOGIN_PAGE_EMAIL_INPUT_LABEL = () => `Email`;
-export const LOGIN_PAGE_PASSWORD_INPUT_LABEL = () => `Password`;
-export const LOGIN_PAGE_EMAIL_INPUT_PLACEHOLDER = () =>
-  `Enter your email address`;
-export const LOGIN_PAGE_PASSWORD_INPUT_PLACEHOLDER = () =>
-  `Enter your password`;
+export const LOGIN_PAGE_PASSWORD_INPUT_LABEL = () => `密码`;
+export const LOGIN_PAGE_EMAIL_INPUT_PLACEHOLDER = () => `请输入email地址`;
+export const LOGIN_PAGE_PASSWORD_INPUT_PLACEHOLDER = () => `请输入密码`;
 export const LOGIN_PAGE_INVALID_CREDS_ERROR = () =>
   `It looks like you may have entered incorrect/invalid credentials. Please try again or reset password using the button below.`;
-export const LOGIN_PAGE_INVALID_CREDS_FORGOT_PASSWORD_LINK = () =>
-  `Reset password`;
+export const LOGIN_PAGE_INVALID_CREDS_FORGOT_PASSWORD_LINK = () => `重置密码`;
 export const NEW_TO_APPSMITH = () => `Don't have an account?`;
 export const LOGIN_PAGE_TITLE = () => `Sign in`;
 export const LOGIN_PAGE_SUBTITLE = () => `Sign in to your account`;
@@ -249,21 +245,21 @@ export const SHARE_APP = () => `Share app`;
 export const ALL_APPS = () => `All apps`;
 
 export const EDITOR_HEADER = {
-  saving: () => "Saving",
-  saveFailed: () => "Save failed",
-  share: () => "Share",
+  saving: () => "保存中",
+  saveFailed: () => "保存失败",
+  share: () => "分享",
   previewTooltip: {
-    text: () => "Preview",
-    shortcut: () => "P",
+    text: () => "预览",
+    shortcut: () => "预",
   },
 };
 
 // Homepage
-export const CREATE_NEW_APPLICATION = () => `Create new`;
-export const SEARCH_APPS = () => `Search for apps...`;
-export const GETTING_STARTED = () => `Getting started`;
-export const WORKSPACES_HEADING = () => `Workspaces`;
-export const WELCOME_TOUR = () => `Welcome tour`;
+export const CREATE_NEW_APPLICATION = () => `创建新应用`;
+export const SEARCH_APPS = () => `搜索应用...`;
+export const GETTING_STARTED = () => `开始`;
+export const WORKSPACES_HEADING = () => `工作区`;
+export const WELCOME_TOUR = () => `欢迎之旅`;
 export const NO_APPS_FOUND = () =>
   `Whale! Whale! This name doesn't ring a bell!`;
 export const APPLICATION_CARD_LIST_ZERO_STATE = () =>
@@ -277,20 +273,18 @@ export const LIGHTNING_MENU_DATA_WIDGET = () => `Use data from a widget`;
 export const LIGHTNING_MENU_QUERY_CREATE_NEW = () => `Create new query`;
 export const LIGHTNING_MENU_API_CREATE_NEW = () => `Create new API`;
 
-export const LIGHTNING_MENU_OPTION_TEXT = () => `Plain text`;
-export const LIGHTNING_MENU_OPTION_JS = () => `Write JS`;
-export const LIGHTNING_MENU_OPTION_HTML = () => `Write HTML`;
+export const LIGHTNING_MENU_OPTION_TEXT = () => `简单文本`;
+export const LIGHTNING_MENU_OPTION_JS = () => `编写 JS`;
+export const LIGHTNING_MENU_OPTION_HTML = () => `编写 HTML`;
 export const CHECK_REQUEST_BODY = () =>
   `Please check your request configuration to debug`;
 export const DONT_SHOW_THIS_AGAIN = () => `Don't show this again`;
 
-export const TABLE_FILTER_COLUMN_TYPE_CALLOUT = () =>
-  `Change column datatype to see filter operators`;
+export const TABLE_FILTER_COLUMN_TYPE_CALLOUT = () => `过滤器设置`;
 
-export const SAVE_HOTKEY_TOASTER_MESSAGE = () =>
-  "Don't worry about saving, we've got you covered!";
+export const SAVE_HOTKEY_TOASTER_MESSAGE = () => "不用担心，系统会自动保存.";
 
-export const WIDGET_SIDEBAR_TITLE = () => `Widgets`;
+export const WIDGET_SIDEBAR_TITLE = () => `组件`;
 export const WIDGET_SIDEBAR_CAPTION = () =>
   `Drag a widget and drop it on the canvas`;
 export const GOOGLE_RECAPTCHA_KEY_ERROR = () =>
@@ -550,9 +544,9 @@ export const DEBUGGER_SEARCH_SNIPPET = () => "Browse code snippets";
 export const DEBUGGER_APPSMITH_SUPPORT = () => "Get Appsmith support";
 
 //action creator menu
-export const NO_ACTION = () => `No action`;
-export const EXECUTE_A_QUERY = () => `Execute a query`;
-export const NAVIGATE_TO = () => `Navigate to`;
+export const NO_ACTION = () => `无操作`;
+export const EXECUTE_A_QUERY = () => `执行查询`;
+export const NAVIGATE_TO = () => `跳转页面`;
 export const SHOW_ALERT = () => `Show alert`;
 export const SHOW_MODAL = () => `Show modal`;
 export const CLOSE_MODAL = () => `Close modal`;
@@ -560,7 +554,7 @@ export const CLOSE = () => `Close`;
 export const STORE_VALUE = () => `Store value`;
 export const REMOVE_VALUE = () => `Remove value`;
 export const CLEAR_STORE = () => `Clear store`;
-export const DOWNLOAD = () => `Download`;
+export const DOWNLOAD = () => `下载`;
 export const COPY_TO_CLIPBOARD = () => `Copy to clipboard`;
 export const RESET_WIDGET = () => `Reset widget`;
 export const EXECUTE_JS_FUNCTION = () => `Execute a JS function`;
