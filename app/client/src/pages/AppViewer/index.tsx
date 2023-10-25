@@ -24,7 +24,7 @@ import { getThemeDetails, ThemeMode } from "selectors/themeSelectors";
 import { getSearchQuery } from "utils/helpers";
 import { getSelectedAppTheme } from "selectors/appThemingSelectors";
 import { useSelector } from "react-redux";
-import BrandingBadge from "./BrandingBadge";
+//import BrandingBadge from "./BrandingBadge";
 import { setAppViewHeaderHeight } from "actions/appViewActions";
 import { showPostCompletionMessage } from "selectors/onboardingSelectors";
 import { CANVAS_SELECTOR } from "constants/WidgetConstants";
@@ -36,7 +36,7 @@ import { initAppViewer } from "actions/initActions";
 import { WidgetGlobaStyles } from "globalStyles/WidgetGlobalStyles";
 import useWidgetFocus from "utils/hooks/useWidgetFocus/useWidgetFocus";
 import HtmlTitle from "./AppViewerHtmlTitle";
-import BottomBar from "components/BottomBar";
+//import BottomBar from "components/BottomBar";
 import type { ApplicationPayload } from "@appsmith/constants/ReduxActionConstants";
 import { getCurrentApplication } from "@appsmith/selectors/applicationSelectors";
 import { editorInitializer } from "../../utils/editor/EditorUtils";
@@ -51,9 +51,9 @@ import { useFeatureFlag } from "utils/hooks/useFeatureFlag";
 import { RAMP_NAME } from "utils/ProductRamps/RampsControlList";
 import { showProductRamps } from "@appsmith/selectors/rampSelectors";
 import { FEATURE_FLAG } from "@appsmith/entities/FeatureFlag";
-import { KBViewerFloatingButton } from "@appsmith/pages/AppViewer/KnowledgeBase/KBViewerFloatingButton";
+//import { KBViewerFloatingButton } from "@appsmith/pages/AppViewer/KnowledgeBase/KBViewerFloatingButton";
 import urlBuilder from "@appsmith/entities/URLRedirect/URLAssembly";
-import { getHideWatermark } from "@appsmith/selectors/tenantSelectors";
+//import { getHideWatermark } from "@appsmith/selectors/tenantSelectors";
 
 const AppViewerBody = styled.section<{
   hasPages: boolean;
@@ -103,7 +103,7 @@ function AppViewer(props: Props) {
   const headerHeight = useSelector(getAppViewHeaderHeight);
   const branch = getSearchQuery(search, GIT_BRANCH_QUERY_KEY);
   const prevValues = usePrevious({ branch, location: props.location, pageId });
-  const hideWatermark = useSelector(getHideWatermark);
+  //const hideWatermark = useSelector(getHideWatermark);
   const pageDescription = useSelector(getCurrentPageDescription);
   const currentApplicationDetails: ApplicationPayload | undefined = useSelector(
     getCurrentApplication,
@@ -235,7 +235,10 @@ function AppViewer(props: Props) {
             >
               {isInitialized && <AppViewerPageContainer />}
             </AppViewerBody>
+            {/* 2023.10.25. stone zhao. comment the hover log.
             {showBottomBar && <BottomBar viewMode />}
+          */}
+            {/* 2023.10.25. stone zhao. comment the hover log.
             <div
               className={`fixed hidden right-8 z-3 md:flex ${
                 showBottomBar ? "bottom-12" : "bottom-4"
@@ -252,7 +255,7 @@ function AppViewer(props: Props) {
                 </a>
               )}
               <KBViewerFloatingButton />
-            </div>
+            </div> */}
           </AppViewerBodyContainer>
         </EditorContextProvider>
       </ThemeProvider>
