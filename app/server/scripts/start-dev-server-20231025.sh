@@ -12,7 +12,7 @@ fi
 
 source ../util/is_wsl.sh
 if [ $IS_WSL ]; then
-  _JAVA_OPTIONS="-Djava.net.preferIPv4Stack=true -Dpf4j.mode=development -Dpf4j.pluginsDir=appsmith-plugins --add-opens java.base/java.time=ALL-UNNAMED $_JAVA_OPTIONS"
+  _JAVA_OPTIONS="-Djava.net.preferIPv4Stack=true $_JAVA_OPTIONS"
 fi
 
 (cd dist && exec java -jar server-*.jar)
